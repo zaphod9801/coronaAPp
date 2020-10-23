@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+    {% load static %}
+    {% block  title %}
+        Sintomas
+    {% endblock   %}
+    {%block content%}
+        <h1 style = "color: blue;"> <strong> Sintomas  </strong> </h1>
+        {% if formulario.errors %}
+            <p style="color: red;"> Revisar este campo </p> 
+        {% endif %}
+        <form action = "" method = "POST"> {% csrf_token %}
+        <table style = "color: blue; font-size: large">
+        <strong>
+        {{formulario.as_table}}
+        </strong>
+        </table>
+        <input type = "submit" value = "enviar">
+        </form>
+    {% endblock %}
