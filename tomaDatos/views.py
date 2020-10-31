@@ -51,7 +51,7 @@ def tomaDatos(request):
                 consejos2.append(consejos[7])
             if (info['senGusto'] == 'No') or (info['senOlfato'] == 'No'):
                 consejos2.append(consejos[8])
-            if (info['dolorPecho'] < 4) and (info['temperatura'] >= 2):
+            if (info['dolorPecho'] < 4) and (info['dolorPecho'] >= 2):
                 consejos2.append(consejos[9])
             if info['dolorPecho'] >= 4:
                 consejos2.append(consejos[10])
