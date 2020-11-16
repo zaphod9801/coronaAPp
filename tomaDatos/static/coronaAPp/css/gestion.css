@@ -277,3 +277,27 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+#navegador ul{
+  list-style-type: none !important;
+  text-align: center !important;
+}
+
+#navegador li{
+  display: inline !important;
+  text-align: center !important;
+  margin: 0 10px 0 0 !important;
+}
+
+#navegador li a {
+  padding: 2px 7px 2px 7px !important;
+  color: rgb(255, 255, 255) !important;
+  background-color:  rgba(0, 47, 255, 0.8) !important;
+  border: 1px solid #ccc !important;
+  text-decoration: none !important;
+}
+
+#navegador li a:hover{
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}

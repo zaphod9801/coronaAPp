@@ -71,3 +71,4 @@ def tomaDatos(request):
     }
     
     return render(request,"formulario.html",contexto)
+

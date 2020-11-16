@@ -4,6 +4,13 @@
         Sintomas
     {% endblock   %}
     {%block content%}
+        {% if messages%}
+            {% for message in messages%}
+                <div class="notification {{message.tags}}">
+                <h3 style = "color: blue; font-weight: bolder;"> <strong>   {{message}} </strong> </h1>
+                </div>
+            {% endfor%}
+        {% endif %}
         <h1 style = "color: blue; font-weight: bolder;"> <strong> Sintomas  </strong> </h1>
         {% if formulario.errors %}
             <p style="color: red;"> Revisar este campo </p> 
@@ -16,6 +23,7 @@
         </strong>
         </table>
         <strong>
+        <br>
         <input style = "color: blue; font-size: large; font-weight: bold;" type = "submit" value = "Enviar">
         </strong>
         </form>
