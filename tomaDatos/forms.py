@@ -23,7 +23,7 @@ class formSintomas(forms.Form):
     diarrea = forms.ChoiceField(label='Tiene diarrea?', widget=forms.Select, choices=opciones)
     dolorEspalda = forms.ChoiceField(label='Tiene dolor de espalda?', widget=forms.Select, choices=opciones)
     dolorCabeza = forms.ChoiceField(label='Tiene dolor de cabeza?', widget=forms.Select, choices=opciones)
-    resultado = forms.ChoiceField(label='El resultado de su prueba, dio positivo? Solo responda si ya tiene el resultado', widget=forms.Select, choices=opciones2)
+    resultado = forms.ChoiceField(label='El resultado de su prueba, dio positivo? Solo responda si ya tiene el resultado', widget=forms.Select, choices=opciones2,required=False)
     
     
     

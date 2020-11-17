@@ -311,6 +311,7 @@ ul.errorlist{
   color: rgb(255, 255, 255) !important; 
   font-size: large !important; 
   font-weight: bold !important;
+  border: 1px solid #ccc !important;
 }
 
 #enviar input[type="submit"]:hover{
@@ -324,6 +325,7 @@ ul.errorlist{
   color: rgb(255, 255, 255) !important; 
   font-size: large !important; 
   font-weight: bold !important;
+  border: 1px solid #ccc !important;
 }
 #enviar a button:hover{
   background-color: #333333 !important;
@@ -359,7 +361,11 @@ form input[type="number"], form textarea {
 }
 form select, form textarea {
   display: block !important;
-  width: 10% !important;
+  width: 50% !important;
+}
+form p select, form textarea {
+  display: block !important;
+  width: 22% !important;
 }
 
 #consejos p{
@@ -369,4 +375,13 @@ form select, form textarea {
   color: rgb(255, 255, 255) !important; 
   font-size: large !important; 
   font-weight: bold !important;
+}
+#consejos li{
+  margin: 0 auto !important;
+  width: 50% !important;
+  background-color: blue !important;
+  color: rgb(255, 255, 255) !important; 
+  font-size: large !important; 
+  font-weight: bold !important;
+  list-style:none !important;
 }

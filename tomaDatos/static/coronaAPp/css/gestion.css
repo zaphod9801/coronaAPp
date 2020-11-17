@@ -311,6 +311,7 @@ ul.errorlist{
   color: rgb(255, 255, 255) !important; 
   font-size: large !important; 
   font-weight: bold !important;
+  border: 1px solid #ccc !important;
 }
 
 #enviar input[type="submit"]:hover{
@@ -324,6 +325,7 @@ ul.errorlist{
   color: rgb(255, 255, 255) !important; 
   font-size: large !important; 
   font-weight: bold !important;
+  border: 1px solid #ccc !important;
 }
 #enviar a button:hover{
   background-color: #333333 !important;
