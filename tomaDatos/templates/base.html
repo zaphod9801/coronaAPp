@@ -30,9 +30,13 @@
       </h1>
       <div id="navegador">
       <ul>
-      <li><a href="http://127.0.0.1:8000/registro/">Registro</a></li>
-      <li><a href="http://127.0.0.1:8000/">Login</a></li>
-      <li><a href="http://127.0.0.1:8000/">Logout</a></li>
+      {% if request.path == '/' or request.path == '/registro/'%}
+      <li><a href="/registro/">Registro</a></li>
+      <li><a href="/">Login</a></li>
+      {% endif %}
+      {% if request.path == '/tomaDatos/' %}
+      <li><a href="/">Logout</a></li>
+      {% endif %}
       </ul>
       </div>
     </div>
@@ -74,11 +78,11 @@
 	        </a>
 	    </p>
         <p class="m-0 mbt">
-        	<a href="sample.html" class="link">Política de privacidad</a> ·
-        	<a href="sample.html" class="link">Aviso legal</a> ·
-        	<a href="sample.html" class="link">Cookies</a>
+        	<a href="https://www.tierragamer.com/wp-content/uploads/2019/07/JoJos-Bizarre-Adventure-Dio-Brando.jpg" class="link">Política de privacidad</a> ·
+        	<a href="https://www.tierragamer.com/wp-content/uploads/2019/07/JoJos-Bizarre-Adventure-Dio-Brando.jpg" class="link">Aviso legal</a> ·
+        	<a href="https://www.tierragamer.com/wp-content/uploads/2019/07/JoJos-Bizarre-Adventure-Dio-Brando.jpg" class="link">Cookies</a>
 		</p>
-        <p class="m-0 mbt1">&copy; CoronaApp 2020</p>
+        <p class="m-0 mbt1">&copy; CoronaApp Lite 2020</p>
       </div>
 	</footer>
 

@@ -295,9 +295,91 @@ ul.errorlist{
   background-color:  rgba(0, 47, 255, 0.8) !important;
   border: 1px solid #ccc !important;
   text-decoration: none !important;
+  font-weight: bold !important;
+  font-size: large !important; 
 }
 
 #navegador li a:hover{
   background-color: #333333 !important;
   color: #ffffff !important;
+  font-weight: bold !important;
+  font-size: large !important; 
+}
+
+#enviar input[type="submit"]{
+  background-color: blue !important;
+  color: rgb(255, 255, 255) !important; 
+  font-size: large !important; 
+  font-weight: bold !important;
+}
+
+#enviar input[type="submit"]:hover{
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  font-size: large !important; 
+  font-weight: bold !important;
+}
+#enviar a button{
+  background-color: blue !important;
+  color: rgb(255, 255, 255) !important; 
+  font-size: large !important; 
+  font-weight: bold !important;
+}
+#enviar a button:hover{
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  font-size: large !important; 
+  font-weight: bold !important;
+}
+
+form {
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
+form #content {
+  margin: 0 auto !important;
+  width: 50% !important;
+  background-color: blue !important;
+  color: rgb(255, 255, 255) !important; 
+  font-size: large !important; 
+  font-weight: bold !important;
+}
+
+form input[type="text"], form textarea {
+  display: block !important;
+  width: 30% !important;
+}
+form input[type="password"], form textarea {
+  display: block !important;
+  width: 30% !important;
+}
+form input[type="number"], form textarea {
+  display: block !important;
+  width: 20% !important;
+}
+form select, form textarea {
+  display: block !important;
+  width: 50% !important;
+}
+form p select, form textarea {
+  display: block !important;
+  width: 22% !important;
+}
+
+#consejos p{
+  margin: 0 auto !important;
+  width: 50% !important;
+  background-color: blue !important;
+  color: rgb(255, 255, 255) !important; 
+  font-size: large !important; 
+  font-weight: bold !important;
+}
+#consejos li{
+  margin: 0 auto !important;
+  width: 50% !important;
+  background-color: blue !important;
+  color: rgb(255, 255, 255) !important; 
+  font-size: large !important; 
+  font-weight: bold !important;
+  list-style:none !important;
 }

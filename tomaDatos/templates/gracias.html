@@ -8,12 +8,18 @@
       <p style = "color: blue; font-size: large;"> <strong> Tus consejos son: </strong></p>
       <ul>
       {% for consejo in consejos %}
-            <li style = "color: blue; font-size: large;"> <strong> {{consejo}}  </strong></li>
-
+            <div id = "consejos">
+            <li style = "color: blue; font-size: large; list-style:none; "> <strong> - {{consejo}}  </strong></li>
+            <li></li>
+            </div>
        {% endfor %}
        </ul>
        {% else %}
-            <p style = "color: blue; font-size: large;"> <strong> Quédate en casa, te cuidas y cuidas a los demás! </strong></p>
-
+            <div id = "consejos">
+            <p > <strong> Todo esta correcto! Quédate en casa, te cuidas y cuidas a los demás! </strong></p>
+            </div>
         {% endif %}
+        <div id="enviar">
+        <a href="/tomaDatos/"> <button type = "button" style = "color: blue; font-size: large; font-weight: bold;"> Insertar mas sintomas </button> </a>
+        </div>
     {% endblock %}

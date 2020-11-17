@@ -46,7 +46,7 @@ def login(request):
                 # Y le redireccionamos a la portada
                 username = form.cleaned_data['username']
                 messages.success(request, f'Hola {username}! Como estas hoy?')
-                return redirect('tomaDatos/')
+                return redirect('/tomaDatos/')
 
     # Si llegamos al final renderizamos el formulario
     return render(request, "login.html", {'form': form})

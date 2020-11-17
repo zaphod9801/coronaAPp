@@ -11,20 +11,26 @@
                 </div>
             {% endfor%}
         {% endif %}
-        <h1 style = "color: blue; font-weight: bolder;"> <strong> Sintomas  </strong> </h1>
+        
         {% if formulario.errors %}
             <p style="color: red;"> Revisar este campo </p> 
         {% endif %}
         <br>
         <form action = "" method = "POST"> {% csrf_token %}
-        <table style = "color: blue; font-size: large">
+        
+       <div id="content">
+       <h1 style = "color: white; font-weight: bolder;"> <strong> Sintomas  </strong> </h1>
+       <br>
         <strong>
-        {{formulario.as_table}}
+        {{formulario.as_p}}
         </strong>
-        </table>
         <strong>
         <br>
-        <input style = "color: blue; font-size: large; font-weight: bold;" type = "submit" value = "Enviar">
+        </div>
+        <br>
+        <div id = "enviar">
+        <input  type = "submit" value = "Enviar">
+        </div>
         </strong>
         </form>
     {% endblock %}

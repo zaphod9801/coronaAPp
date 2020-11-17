@@ -4,20 +4,24 @@
         Registro
     {% endblock   %}
     {%block content%}
-       <h1 style = "color: blue; font-weight: bolder;"> <strong> Registro  </strong> </h1>
+       
         {% if formulario.errors %}
             <p style="color: red;"> Revisar este campo </p> 
         {% endif %}
         <br>
         <form action = "" method = "POST"> {% csrf_token %}
-        <table style = "color: blue; font-size: large">
+        <div id="content">
+        <h1 style = "color: white; font-weight: bolder;"> <strong> Registro  </strong> </h1>
+        <br>
         <strong>
-        {{form.as_table}}
+        {{form.as_p}}
         </strong>
-        </table>
         <strong>
         <br>
-        <input style = "color: blue; font-size: large; font-weight: bold;" type = "submit" value = "Registrarse">
+        </div>
+        <div id = "enviar">
+        <input  type = "submit" value = "Registrarse">
+        </div>
         </strong>
         </form>
     {% endblock %}

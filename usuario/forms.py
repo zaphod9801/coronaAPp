@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from django.contrib.auth.models import User
 
 class registroForm(UserCreationForm):
+    username = forms.CharField(label = "Usuario")
     edad = forms.IntegerField();
     password1 = forms.CharField(label = "Contraseña",widget = forms.PasswordInput)
     password2 = forms.CharField(label = "Confirma contraseña",widget = forms.PasswordInput)
